@@ -1,0 +1,84 @@
+.title {
+	font-family: FiraSans, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 35px;
+	line-height: 42px;
+	text-align: center;
+	color: #4F4F4F;
+}
+
+.button {
+	display: inline-block;
+	font-family: Montserrat, sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	color: #FFFFFF;
+	padding: 20px 40px 25px 40px;
+	background: linear-gradient(180deg, #03BCFC 100%);
+	border-radius: 7px;
+	&:hover {
+		color: #FFFFFF;
+		background: linear-gradient(180deg, #03BCFC 11.94%, #0393FC 100%);
+	}
+	&:active {
+		background: linear-gradient(180deg, #0393FC 100%);
+	}
+}
+
+.button-details {
+	display: inline-block;
+	font-family: Montserrat, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+	color: #4F4F4F;
+	border: 1px solid #03BCFC;
+	border-radius: 7px;
+	padding: 20px 62px 25px 62px;
+	background-color: transparent;
+	&:hover {
+		background: #03BCFC;
+		color: #FFFFFF;
+	}
+	&:active {
+		background: #078FF2;
+		color: #FFFFFF;
+	}
+}
+
+.title {
+	font-family: FiraSans, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 35px;
+	line-height: 42px;
+	color: #000000;
+}
+
+.logo {
+	img {
+		width: 156px;
+		height: 63px;
+	}
+}
+
+.menu {
+	&__list {
+		display: flex;
+	}
+	.menu__list-item + .menu__list-item {
+		margin-left: 90px;
+	}
+	&__list-item {
+		font-family: Montserrat, sans-serif;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 24px;
+		color: #4F4F4F;
+	}
+}

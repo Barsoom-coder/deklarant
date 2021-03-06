@@ -1,10 +1,10 @@
 // USER VARIABLES SECTION
 
-$accent: orange // Accent Color
+$accent: #03BCFC// Accent Color
 $fontsize: 16px // Body Font Size
-$textcolor: #333 // Text Color
-$lineheight: 1.65 // Document Line Height
-$userfont: roboto-oh5, sans-serif // User Font Family
+$textcolor: #4F4F4F // Text Color
+$lineheight: 20px // Document Line Height
+$userfont: Montserrat, sans-serif // User Font Family
 $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
 
 // Bootstrap compatible gutter variable => $gutter
@@ -27,10 +27,11 @@ $gutter: $grid-gutter-width
 		font-weight: $fweight
 		src: url($furl) format('woff2')
 
-@include font('roboto-oh5', normal, 400, '../fonts/roboto-regular-webfont.woff2')
-@include font('roboto-oh5', italic, 400, '../fonts/roboto-italic-webfont.woff2')
-@include font('roboto-oh5', normal, 700, '../fonts/roboto-bold-webfont.woff2')
-@include font('roboto-oh5', italic, 700, '../fonts/roboto-bolditalic-webfont.woff2')
+@include font('FiraSans', normal, 400, '../fonts/FiraSans-Regular.woff2')
+@include font('Montserrat', normal, 300, '../fonts/Montserrat-Thin.woff2')
+@include font('Montserrat', normal, 400, '../fonts/Montserrat-Regular.woff2')
+@include font('Montserrat', normal, 500, '../fonts/Montserrat-Medium.woff2')
+@include font('Montserrat', normal, 600, '../fonts/Montserrat-SemiBold.woff2')
 
 // GENERAL DOCUMENT STYLES
 
@@ -42,17 +43,63 @@ $gutter: $grid-gutter-width
 	color: #fff
 
 input, textarea
-	outline: none
+	// outline: none
 	&:focus:required:invalid
 		border-color: red
 	&:required:valid
 		border-color: green
 
+.container
+	max-width: 1460px
+	padding-left: 15px
+	padding-right: 15px
+	margin: 0 auto
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 
+	font-weight: inherit
+	padding: 0
+	margin: 0
+
+a 
+	color: inherit
+	text-decoration: none
+	transition: all 0.4s ease
+	&:focus-visible
+		outline: transparent
+	&:hover
+		text-decoration: none
+		color: #03BCFC
+	&:active
+		color: #078FF2
+
+
+button
+	transition: all 0.4s ease
+
+ul,li 
+	list-style-type: none
+	margin: 0
+	padding: 0
+
+p 
+	padding: 0
+	margin: 0
+
 body
 	font-family: $userfont
 	font-size: $fontsize
+	background-color: #FFFFFF
+	font-weight: 400
 	line-height: $lineheight
 	color: $textcolor
+	max-width: 1920px
 	min-width: 320px
+	margin: 0 auto
 	position: relative
 	overflow-x: hidden
+
