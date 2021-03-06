@@ -1,0 +1,50 @@
+.advantages {
+	margin-bottom: 110px;
+	&__inner {
+		max-width: 1242px;
+		margin: 0 auto;
+	}
+	&__title {
+		max-width: 470px;
+		margin: 0 auto;
+		margin-bottom: 54px;
+	}
+	&__block-wrap {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 49px;
+	}
+	&__block {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__block-img {
+		margin-right: 30px;
+		&--price {
+			margin-right: 10px;
+		}
+	}
+	&__block-descr {
+		line-height: 20px;
+		padding-top: 12px;
+	}
+	&__button {
+		text-align: center;
+	}
+	&__more {
+		max-width: 899px;
+		padding-top: 50px;
+		margin: 0 auto;
+	}
+	&__more-text {
+		padding-bottom: 35px;
+		&:last-child {
+			padding-bottom: 0;
+		}
+	}
+	&__more-textbold {
+		font-weight: 600;
+	}
+}

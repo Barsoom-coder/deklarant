@@ -1,0 +1,36 @@
+.section-services {
+	margin-bottom: 108px;
+	&__inner {
+		max-width: 1290px;
+		margin: 0 auto;
+	}
+	&__title {
+		margin-bottom: 50px;
+	}
+	&__cards-wrap {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	.card-box {
+		max-width: 410px;
+		height: 525px;
+		background: #FFFFFF;
+		box-shadow: 0px 11px 30px rgba(0, 0, 0, 0.1);
+		border-radius: 7px;
+		margin-bottom: 40px;
+	}
+	.card-box__img {
+		img {
+			max-width: 410px;
+			height: 332px;
+		}
+	}
+	.card-box__text {
+		padding: 30px 42px 0px 45px;
+	}
+	&__button-allservices {
+		text-align: center;
+	}
+}
